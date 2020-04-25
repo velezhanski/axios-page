@@ -12,7 +12,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('build', gulp.series(('sass'), function() {
-  return gulp.src('app/*.html')
+  return gulp.src(['app/*.html', 'app/images/**/*.png'], { base: './app' })
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
       stream: true
