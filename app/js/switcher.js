@@ -3,6 +3,8 @@ var btc = "btc";
 
 function switchCurrency(){
   const input = document.getElementById('input-currency').innerHTML;
+  document.getElementById('input').value = 0
+  document.getElementById('output').value = 0
 
   if (input == eur) {
     document.getElementById('input-currency').innerHTML = btc;
