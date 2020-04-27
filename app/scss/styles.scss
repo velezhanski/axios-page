@@ -1,2 +1,9 @@
-@import './styles/box.scss';
+body {
+  margin: 0;
+}
+
+@import './styles/colors.scss';
+@import './styles/fonts.scss';
 @import './styles/generic.scss';
+@import './styles/header.scss';
+@import './styles/exchange.scss';

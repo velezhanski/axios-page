@@ -1,0 +1,134 @@
+.exchange {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  align-items: center;
+  background-image: url(./images/backgrounds/exchange-bg.png);
+  background-size: contain;
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  
+  .title {
+    color: $blue;
+    font-size: 45px;
+    font-family: $ubuntu-font;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .subtitle {
+    color: $purple3;
+    font-size: 30px;
+    font-family: $nunito-font;
+    font-weight: normal;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  hr {
+    border-top: 2px solid $blue;
+    width: 10rem;
+  }
+
+  .exchange-box {
+    width: 30%;
+    background-color: $blue;
+    padding: 2rem;
+    border-radius: 30px;
+
+    .box-title {
+      color: white;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: $ubuntu-font;
+      font-weight: normal;
+      padding-left: 2rem;
+    }
+
+    .currency-input {
+      display: flex;
+
+      label {
+        font-size: 20px;
+        color: $blue;
+        font-family: $nunito-font;
+        font-weight: bold;
+        position: absolute;
+        transform: translate(2rem, 0.5rem);
+      }
+
+      input {
+        font-size: 30px;
+        color: $grey;
+        font-family: $nunito-font;
+        width: 70%;
+        border: none;
+        border-radius: 50px 0px 0px 50px;
+        padding-left: 2rem;
+        height: 5rem;
+        padding-top: 1.5rem;
+        outline: none;
+      }
+
+      h1 {
+        font-size: 30px;
+        font-family: $nunito-font;
+        font-weight: bold;
+        width: 30%;
+        vertical-align: middle;
+        margin: auto;
+        line-height: 5rem;
+        text-align: center;
+        background-color: white;
+        border: none;
+        border-radius: 0px 50px 50px 0px;
+      }
+    }
+
+    .exchange-switcher {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        font-size: 20px;
+        color: white;
+        font-family: $nunito-font;
+        font-weight: normal;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 2rem;
+        margin: 0;
+      }
+
+      a {
+        margin: auto 0;
+
+        .switcher-icon {
+          height: 50px;
+          width: auto;
+          margin-right: 2rem;
+          border-radius: 100%;
+
+          &:hover {
+            box-shadow: 0px 0px 15px 1px #000000;    
+          }
+        }
+      }
+    }
+
+    .exchange-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      p {
+        color: white;
+        font-size: 15px;
+        font-family: $nunito-font;
+        padding-left: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;      }
+    }
+  }
+}

@@ -1,5 +1,16 @@
-$primary-color: orange;
+.cta {
+  background-color: $yellow;
+  border-radius: 35px;
 
-h1 {
-  color: $primary-color;
-}
+  &:hover {
+    box-shadow: 0px 0px 15px 1px #000000;    
+  }
+  
+  h1 {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 15px 80px;
+    margin: 0;
+  }
+};

@@ -1,15 +1,84 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Paypoint LP</title>
-    <link rel="stylesheet" href="./styles.css">
-  </head>
-  <body>
-    <section>
-      <img src="./images/logos/logo-white.png" alt="Logo">
-      <h1>Holla</h1>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <title>Paypoint LP</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <section class="logo-text">
+      <img class="logo" src="./images/logos/logo-white.png" alt="Logo">
+
+      <h1 class="title">Frustrated with your Payment Gateway?</h1>
     </section>
-    
-  </body>
+
+    <section class="infographic mt-5">
+      <div>
+        <h1>Having trouble accepting payments online?</h1>
+      </div>
+      <div>
+        <h1>Tired of your PSP’s system downtimes?</h1>
+      </div>
+      <div>
+        <h1>Concerned about safety?</h1>
+      </div>
+      <div>
+        <h1>Annoyed by the lengthy payout times?</h1>
+      </div>
+    </section>
+
+    <section class="cta-box">
+      <a class="cta">
+        <h1>learn more</h1>
+      </a>
+    </section>
+  </header>
+
+  <main>
+    <section class="exchange">
+      <h1 class="title">It’s time for a change!</h1>
+      <h1 class="subtitle">Your Payment Gateway <strong>should be a problem-solver, not a problem.</strong></h1>
+      <hr>
+      <div class="exchange-box">
+        <h1 class="box-title">Trade with ease</h1>
+        <div class="currency-input">
+          <label for="input">You Sell</label>
+          <input type="number" id="input" name="lname" value="0">
+          <h1 id="input-currency">EUR</h1>
+        </div>
+        <div class="exchange-switcher">
+          <p>Market Rate* : 1 BTC - 6500 EUR</p>
+          <a onclick="switchCurrency()">
+            <img class="switcher-icon" src="./images/icons/switcher-icon.png" alt="Logo">
+          </a>
+        </div>
+        <div class="currency-input">
+          <label for="output">You Get</label>
+          <input type="number" id="output" value="0.0000000" readonly>
+          <h1 id="output-currency">BTC</h1>
+        </div>
+        <div class="exchange-footer">
+          <p>* Rate is constantly changing depending on the market conditions, and the moment the order is actually
+            executed</p>
+          <a class="cta">
+            <h1>exchange</h1>
+          </a>
+        </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Footer go here -->
+  </footer>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="./js/switcher.js"></script>
+
+</body>
+
 </html>

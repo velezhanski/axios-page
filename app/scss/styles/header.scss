@@ -1,0 +1,62 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/backgrounds/header-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 110vh;
+  background-position: bottom;
+
+  .logo-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+
+    .logo {
+      width: 250px;
+      height: auto;
+    }
+
+    .title {
+      font-family: $ubuntu-font;
+      font-weight: bold;
+      font-size: 31px;
+      letter-spacing: 1px;
+      color: white;
+      text-align: center;
+      text-transform: uppercase;
+      margin-top: 2rem;
+    }
+  }
+
+  .infographic {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 2rem;
+    background-image: url(./images/backgrounds/infographic-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    div {
+      flex-basis: 50%;
+      padding: 5rem;
+
+      h1 {
+        color: $purple2;
+        font-size: 25px;
+        background-color: white;
+        border-radius: 35px;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 20px;
+      }
+    }
+  }
+
+  .cta-box {
+    display: flex;
+  }
+}
