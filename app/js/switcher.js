@@ -1,5 +1,5 @@
-var eur = "EUR";
-var btc = "BTC";
+var eur = "eur";
+var btc = "btc";
 
 function switchCurrency(){
   const input = document.getElementById('input-currency').innerHTML;

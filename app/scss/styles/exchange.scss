@@ -1,13 +1,4 @@
-.exchange {
-  display: flex;
-  flex-direction: column;
-  padding-top: 2rem;
-  align-items: center;
-  background-image: url(./images/backgrounds/exchange-bg.png);
-  background-size: contain;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-  
+.exchange {  
   .title {
     color: $blue;
     font-size: 45px;
@@ -29,6 +20,17 @@
   hr {
     border-top: 2px solid $blue;
     width: 10rem;
+  }
+  .exchange-container {
+    background-image: url(./images/backgrounds/exchange-bg.png);
+    background-size: contain;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    align-items: center;
+    width: 100%;
   }
 
   .exchange-box {
@@ -83,6 +85,7 @@
         background-color: white;
         border: none;
         border-radius: 0px 50px 50px 0px;
+        text-transform: uppercase;
       }
     }
 
@@ -128,7 +131,8 @@
         font-family: $nunito-font;
         padding-left: 2rem;
         padding-top: 1rem;
-        padding-bottom: 1rem;      }
+        padding-bottom: 1rem;      
+      }
     }
   }
 }

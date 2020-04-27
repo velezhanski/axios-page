@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body>
+<body onload="initialize()">
   <header class="header">
     <section class="logo-text">
       <img class="logo" src="./images/logos/logo-white.png" alt="Logo">
@@ -44,15 +44,16 @@
       <h1 class="title">It’s time for a change!</h1>
       <h1 class="subtitle">Your Payment Gateway <strong>should be a problem-solver, not a problem.</strong></h1>
       <hr>
+      <div class="exchange-container">
       <div class="exchange-box">
         <h1 class="box-title">Trade with ease</h1>
         <div class="currency-input">
           <label for="input">You Sell</label>
           <input type="number" id="input" name="lname" value="0">
-          <h1 id="input-currency">EUR</h1>
+          <h1 id="input-currency">eur</h1>
         </div>
         <div class="exchange-switcher">
-          <p>Market Rate* : 1 BTC - 6500 EUR</p>
+          <p id="currency-price">Market Rate* : 1 BTC - 6500 EUR</p>
           <a onclick="switchCurrency()">
             <img class="switcher-icon" src="./images/icons/switcher-icon.png" alt="Logo">
           </a>
@@ -60,15 +61,16 @@
         <div class="currency-input">
           <label for="output">You Get</label>
           <input type="number" id="output" value="0.0000000" readonly>
-          <h1 id="output-currency">BTC</h1>
+          <h1 id="output-currency">btc</h1>
         </div>
         <div class="exchange-footer">
           <p>* Rate is constantly changing depending on the market conditions, and the moment the order is actually
             executed</p>
-          <a class="cta">
+          <a class="cta" onclick="performExchange()">
             <h1>exchange</h1>
           </a>
         </div>
+      </div>
     </section>
   </main>
 
@@ -77,7 +79,10 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="./js/switcher.js"></script>
+  <script type="text/javascript" src="./js/exchange.js"></script>
+  <script type="text/javascript" src="./js/initialize.js"></script>
 
 </body>
 
