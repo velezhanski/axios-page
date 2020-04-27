@@ -1,10 +1,13 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('sass', function () {
   return gulp.src('app/scss/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass())
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
       stream: true
