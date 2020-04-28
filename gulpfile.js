@@ -15,7 +15,7 @@ gulp.task('sass', function () {
 });
 
 gulp.task('build', gulp.series(('sass'), function() {
-  return gulp.src(['app/*.html', 'app/images/**/*.png', 'app/js/**/*.js'], { base: './app' })
+  return gulp.src(['app/*.html', 'app/images/**/*.png', 'app/js/**/*.js', 'app/php/**/*.php'], { base: './app' })
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
       stream: true

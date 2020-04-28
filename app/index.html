@@ -110,15 +110,17 @@
     <section class="contact">
       <div class="contact-container">
         <h1 class="title">Contact Us</h1>
-        <form class="contact-form">
-          <input type="text" id="name" name="name" placeholder="Name">
-          <input type="email" id="email" name="email" placeholder="E-mail">
-          <input type="number" id="phone" name="phone" placeholder="Phone">
-          <input type="text" id="website" name="website" placeholder="Website">
-          <textarea id="message" name="message" placeholder="Message" style="min-height:20px"></textarea>
-          <a class="cta">
-            <h1>Contact US</h1>
-          </a>
+        <form action="./php/mail.php" method="POST" class="contact-form">
+          <input class="input" type="text" id="name" name="name" placeholder="Name">
+          <input class="input" type="email" id="email" name="email" placeholder="E-mail">
+          <input class="input" type="number" id="phone" name="phone" placeholder="Phone">
+          <input class="input" type="text" id="website" name="website" placeholder="Website">
+          <select class="input" class="dropown" name="dropdown" id="myList">
+            <option value="1">Merchant integration request</option>
+            <option value="2">Other</option>
+          </select>
+          <textarea class="input" id="message" name="message" placeholder="Message"></textarea>
+          <input type="submit" value="Contact US" class="cta">
         </form>
       </div>
       <img class="contact-form-image" src="images/contact/contact-us.png">
@@ -127,7 +129,7 @@
 
   <footer>
     <section class="footer">
-     <img class="logo" src="./images/logos/logo-color.png" alt="Logo">
+      <img class="logo" src="./images/logos/logo-color.png" alt="Logo">
       <div class="links-container">
         <div class="links-box">
           <h1 class="title">Info & Legal</h1>
