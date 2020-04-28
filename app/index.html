@@ -11,12 +11,9 @@
 
 <body onload="initialize()">
   <header class="header">
-    <section class="logo-text">
-      <img class="logo" src="./images/logos/logo-white.png" alt="Logo">
-
+    <section class="logo-text"> <img class="logo" src="./images/logos/logo-white.png" alt="Logo">
       <h1 class="title">Frustrated with your Payment Gateway?</h1>
     </section>
-
     <section class="infographic mt-5">
       <div>
         <h1>Having trouble accepting payments online?</h1>
@@ -45,37 +42,156 @@
       <h1 class="subtitle">Your Payment Gateway <strong>should be a problem-solver, not a problem.</strong></h1>
       <hr>
       <div class="exchange-container">
-      <div class="exchange-box">
-        <h1 class="box-title">Trade with ease</h1>
-        <div class="currency-input">
-          <label for="input">You Sell</label>
-          <input type="number" id="input" name="lname" value="0">
-          <h1 id="input-currency">eur</h1>
+        <div class="exchange-box">
+          <h1 class="box-title">Trade with ease</h1>
+          <div class="currency-input">
+            <label for="input">You Sell</label>
+            <input type="number" id="input" name="lname" value="0">
+            <h1 id="input-currency">eur</h1>
+          </div>
+          <div class="exchange-switcher">
+            <p id="currency-price">Market Rate* : 1 BTC - 6500 EUR</p>
+            <a onclick="switchCurrency()"> <img class="switcher-icon" src="./images/icons/switcher-icon.png" alt="Logo">
+            </a>
+          </div>
+          <div class="currency-input">
+            <label for="output">You Get</label>
+            <input type="number" id="output" value="0" readonly>
+            <h1 id="output-currency">btc</h1>
+          </div>
+          <div class="exchange-footer">
+            <p>* Rate is constantly changing depending on the market conditions, and the moment the order is actually
+              executed</p>
+            <a class="cta" onclick="performExchange()">
+              <h1>exchange</h1>
+            </a>
+          </div>
         </div>
-        <div class="exchange-switcher">
-          <p id="currency-price">Market Rate* : 1 BTC - 6500 EUR</p>
-          <a onclick="switchCurrency()">
-            <img class="switcher-icon" src="./images/icons/switcher-icon.png" alt="Logo">
+      </div>
+    </section>
+
+    <section class="icons">
+      <h1 class="title">It’s time for a change!</h1>
+      <hr>
+      <div class="icons-container">
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/gift.png">
+          <p class="icon-text">Competitive fees for your business model</p>
+        </div>
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/customer-support.png">
+          <p class="icon-text">Personalized customer support</p>
+        </div>
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/timer.png">
+          <p class="icon-text">99.9% uptime – (We have proof. Just ask and we can share)</p>
+        </div>
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/pci.png">
+          <p class="icon-text">PCI-DSS Level 1 Certified</p>
+        </div>
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/ewallets.png">
+          <p class="icon-text">Support for a variety of eWallets, acquirers and processor</p>
+        </div>
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/online-payments.png">
+          <p class="icon-text">Accept worldwide online payments</p>
+        </div>
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/api.png">
+          <p class="icon-text">Simple API & smart features that give you control and authority</p>
+        </div>
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/bank.png">
+          <p class="icon-text">Instant Bank Transfers</p>
+        </div>
+        <div class="icons-box"> <img class="icon" src="./images/icons/icons-section/payouts.png">
+          <p class="icon-text">Flexible Payouts</p>
+        </div>
+      </div>
+      <a class="cta">
+        <h1>learn more</h1>
+      </a>
+    </section>
+
+    <section class="contact">
+      <div class="contact-container">
+        <h1 class="title">Contact Us</h1>
+        <form class="contact-form">
+          <input type="text" id="name" name="name" placeholder="Name">
+          <input type="email" id="email" name="email" placeholder="E-mail">
+          <input type="number" id="phone" name="phone" placeholder="Phone">
+          <input type="text" id="website" name="website" placeholder="Website">
+          <textarea id="message" name="message" placeholder="Message" style="min-height:20px"></textarea>
+          <a class="cta">
+            <h1>Contact US</h1>
           </a>
-        </div>
-        <div class="currency-input">
-          <label for="output">You Get</label>
-          <input type="number" id="output" value="0" readonly>
-          <h1 id="output-currency">btc</h1>
-        </div>
-        <div class="exchange-footer">
-          <p>* Rate is constantly changing depending on the market conditions, and the moment the order is actually
-            executed</p>
-          <a class="cta" onclick="performExchange()">
-            <h1>exchange</h1>
-          </a>
-        </div>
+        </form>
       </div>
     </section>
   </main>
 
   <footer>
-    <!-- Footer go here -->
+    <section class="footer">
+     <img class="logo" src="./images/logos/logo-color.png" alt="Logo">
+      <div class="links-container">
+        <div class="links-box">
+          <h1 class="title">Info & Legal</h1>
+          <a href="#">
+            <p class="link-title">Legal Documents</p>
+          </a>
+          <a>
+            <p class="link-title">Licenses/Certificates</p>
+          </a>
+          <a>
+            <p class="link-title">Useful Partner information</p>
+          </a>
+        </div>
+        <div class="links-box">
+          <h1 class="title">Company</h1>
+          <a href="#">
+            <p class="link-title">About us</p>
+          </a>
+          <a>
+            <p class="link-title">Security</p>
+          </a>
+          <a>
+            <p class="link-title">Chargebacks</p>
+          </a>
+        </div>
+        <div class="links-box">
+          <h1 class="title">Services</h1>
+          <a>
+            <p class="link-title">Merchant Account</p>
+          </a>
+          <a>
+            <p class="link-title">Global Acquiring</p>
+          </a>
+          <a>
+            <p class="link-title">Payouts</p>
+          </a>
+          <a>
+            <p class="link-title">Login</p>
+          </a>
+        </div>
+        <div class="links-box">
+          <h1 class="title">Work with us</h1>
+          <a class="blue-cta">
+            <h1>get in touch</h1>
+          </a>
+          <a class="white-cta">
+            <h1>Create Test Account</h1>
+          </a>
+          <h1 class="title">Follow us</h1>
+          <div class="social-icons">
+            <a><img src="./images/icons/social-icons/facebook.png"></a>
+            <a><img src="./images/icons/social-icons/youtube.png"></a>
+            <a><img src="./images/icons/social-icons/instagram.png"></a>
+            <a><img src="./images/icons/social-icons/linkedin.png"></a>
+            <a><img src="./images/icons/social-icons/twitter.png"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="disclaimer">
+      <p>Paypoint is owned and operated by Silvergate Technologies Limited, Antheon 2, Monovoliko 4, Kato Polemidia,
+        4151 Limassol, Cyprus</p>
+      <p><strong>© Paypoint 2019. All Rights Reserved.</strong></p>
+    </section>
   </footer>
 
   <!-- Scripts -->
@@ -83,7 +199,6 @@
   <script type="text/javascript" src="./js/switcher.js"></script>
   <script type="text/javascript" src="./js/exchange.js"></script>
   <script type="text/javascript" src="./js/initialize.js"></script>
-
 </body>
 
 </html>

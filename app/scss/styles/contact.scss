@@ -1,0 +1,38 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/backgrounds/contact-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  .contact-container {
+    background-color: white;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 2rem;
+
+    .title {
+      color: $blue;
+      font-family: $ubuntu-font;
+      font-weight: normal;
+      font-size: 45px;
+      padding-left: 2rem;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+
+      input, textarea {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 1rem;
+        border: solid 2px $yellow;
+        border-radius: 30px;
+        width: 400px;
+      }
+    }
+  }
+}

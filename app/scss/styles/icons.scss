@@ -1,0 +1,52 @@
+.icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+
+  .title {
+    color: $blue;
+    font-size: 45px;
+    font-family: $ubuntu-font;
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  hr {
+    border-top: 2px solid $blue;
+    width: 10rem;
+  }
+
+  .icons-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+
+    .icons-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      width: 30%;
+
+      .icon {
+        width: 120px;
+        height: auto;
+      }
+
+      .icon-text {
+        font-size: 25px;
+        font-family: $nunito-font;
+        color: $blue;
+        padding: 2rem;
+
+      }
+      
+    }
+  }
+}

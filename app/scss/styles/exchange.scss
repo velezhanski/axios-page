@@ -1,4 +1,6 @@
 .exchange {  
+  margin-bottom: 10rem;
+  
   .title {
     color: $blue;
     font-size: 45px;
@@ -24,7 +26,7 @@
   .exchange-container {
     background-image: url(./images/backgrounds/exchange-bg.png);
     background-size: contain;
-    background-position-y: bottom;
+    background-position: bottom;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
