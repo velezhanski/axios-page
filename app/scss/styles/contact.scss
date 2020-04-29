@@ -18,7 +18,7 @@
 
     @media (max-width: $bp-tablet) {
       min-width: auto;
-    };
+    }
 
     .title {
       color: $blue;
@@ -47,7 +47,7 @@
 
         @media (max-width: $bp-tablet) {
           width: 300px;
-        };
+        }
 
         &::placeholder {
           color: $purple1;
@@ -60,7 +60,7 @@
         min-height: 5rem;
         resize: none;
         transition: all 0.5s ease;
-        
+
         &:focus {
           min-height: 8rem;
         }
@@ -90,10 +90,10 @@
 
     @media (max-width: $bp-large) {
       width: 300px;
-    };
+    }
 
     @media (max-width: $bp-tablet) {
       display: none;
-    };
+    }
   }
 }

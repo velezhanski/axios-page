@@ -27,11 +27,11 @@
 
     @media (max-width: $bp-large) {
       width: 80%;
-    };
+    }
 
     @media (max-width: $bp-tablet) {
       width: 100%;
-    };
+    }
 
     .icons-box {
       display: flex;
@@ -44,7 +44,7 @@
 
       @media (max-width: $bp-tablet) {
         width: 50%;
-      };
+      }
 
       .icon {
         height: 90px;
@@ -58,7 +58,6 @@
         padding: 1rem;
 
       }
-      
     }
   }
 }

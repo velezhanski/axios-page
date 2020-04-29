@@ -8,11 +8,11 @@ footer {
 
     @media (max-width: $bp-large) {
       width: 100%;
-    };
+    }
 
     @media (max-width: $bp-tablet) {
       flex-direction: column;
-    };
+    }
 
     .logo {
       width: 200px;
