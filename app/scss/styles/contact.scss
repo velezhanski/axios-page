@@ -11,7 +11,7 @@
 
   .contact-container {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 20px;
     margin: 2rem;
     padding: 2rem;
     min-width: 700px;
@@ -20,7 +20,7 @@
       color: $blue;
       font-family: $ubuntu-font;
       font-weight: normal;
-      font-size: 45px;
+      font-size: 40px;
       padding-left: 2rem;
     }
 
@@ -60,9 +60,9 @@
 
       .cta {
         color: white;
-        font-size: 25px;
+        font-size: 18px;
         text-transform: uppercase;
-        padding: 15px 80px;
+        padding: 10px 80px;
         margin-top: 0.5rem;
       }
 

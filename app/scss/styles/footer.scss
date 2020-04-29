@@ -1,94 +1,109 @@
-.footer {
-  display: flex;
-  width: 70%;
-  margin: 0 auto;
+footer {
+  .footer {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
 
-  .logo {
-    height: 60px;
-    margin: 2rem;
+    .logo {
+      height: 60px;
+      margin: 2rem;
+    }
+
+    .links-container {
+      display: flex;
+      justify-content: space-evenly;
+      width: auto;
+
+      .links-box {
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        .title {
+          color: $purple1;
+          font-size: 19px;
+          font-family: $nunito-font;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+
+        .link-title {
+          text-decoration: none;
+          color: $purple1;
+          font-size: 12px;
+          font-family: $nunito-font;
+          margin-bottom: 0.5rem;
+        }
+
+        .blue-cta {
+          background-color: $blue;
+          border-radius: 35px;
+          width: fit-content;
+
+          &:hover {
+            box-shadow: 0px 0px 15px 1px #000000;
+          }
+
+          h1 {
+            color: white;
+            font-size: 14px;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            width: 200px;
+            margin: 0;
+            text-align: center;
+          }
+        }
+
+        .white-cta {
+          background-color: white;
+          border-radius: 35px;
+          border: solid 1px $blue;
+          width: fit-content;
+          margin-top: 1rem;
+          margin-bottom: 2rem;
+
+
+          &:hover {
+            box-shadow: 0px 0px 15px 1px #000000;
+          }
+
+          h1 {
+            color: $blue;
+            font-size: 14px;
+            font-weight: normal;
+            text-transform: uppercase;
+            padding: 10px 0px;
+            width: 200px;
+            margin: 0;
+            text-align: center;
+          }
+        }
+
+        .social-icons {
+          display: flex;
+          justify-content: space-between;
+          width: 70%;
+
+          img {
+            height: 15px;
+          }
+        }
+      }
+    }
   }
 
-  .links-container {
-    display: flex;
-    justify-content: space-evenly;
-    width: auto;
+  .disclaimer {
+    background-color: rgba(0, 80, 133, 0.15);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
 
-    .links-box {
-      margin: 2rem;
-      display: flex;
-      flex-direction: column;
-
-      .title {
-        color: $purple1;
-        font-size: 19px;
-        font-family: $nunito-font;
-        font-weight: 600;
-        margin-bottom: 1rem;
-      }
-
-      .link-title {
-        text-decoration: none;
-        color: $purple1;
-        font-size: 12px;
-        font-family: $nunito-font;
-        margin-bottom: 0.5rem;
-      }
-
-      .blue-cta {
-        background-color: $blue;
-        border-radius: 35px;
-        width: fit-content;
-        
-        &:hover {
-          box-shadow: 0px 0px 15px 1px #000000;    
-        }
-        
-        h1 {
-          color: white;
-          font-size: 14px;
-          font-weight: normal;
-          text-transform: uppercase;
-          padding: 10px 0px;
-          width: 200px;
-          margin: 0;
-          text-align: center;
-        }
-      }
-
-      .white-cta {
-        background-color: white;
-        border-radius: 35px;
-        border: solid 1px $blue;
-        width: fit-content;
-        margin-top: 1rem;
-        margin-bottom: 2rem;
-
-        
-        &:hover {
-          box-shadow: 0px 0px 15px 1px #000000;    
-        }
-        
-        h1 {
-          color: $blue;
-          font-size: 14px;
-          font-weight: normal;
-          text-transform: uppercase;
-          padding: 10px 0px;
-          width: 200px;
-          margin: 0;
-          text-align: center;
-        }
-      }
-
-      .social-icons {
-        display: flex;
-        justify-content: space-between;
-        width: 70%;
-
-        img {
-          height: 15px;
-        }
-      }
+    p {
+      font-size: 14px;
+      color: $blue;
+      font-family: $montserrat-font;
     }
   }
 }
