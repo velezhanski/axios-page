@@ -12,6 +12,7 @@ And then run the following gulp command to launch the web server in the browser
 ```
 gulp start
 ```
+Now just open http://localhost:8010/ and you are good to go
 
 ## Built With
 * [PHP](https://www.php.net/)
