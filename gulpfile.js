@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var php = require('gulp-connect-php');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
@@ -22,12 +23,18 @@ gulp.task('build', gulp.series(('sass'), function() {
     }));
 }));
 
-gulp.task('start', gulp.series(('build'), function (done) {
+gulp.task('php', function(){
+  php.server({base:'./dist', port:8010, keepalive:true});
+});
+
+gulp.task('start', gulp.series((['build', 'php']), function (done) {
   browserSync.init({
-    server: {
-      baseDir: 'dist'
-    },
-  });
+    proxy:"localhost:8010",
+    baseDir: "./dist",
+    open:true,
+    notify:false
+});
+
   gulp.watch("app/scss/**/*.scss", gulp.series('sass'));
   gulp.watch("app/*.html", gulp.series('build'));
   gulp.watch("app/js/**/*.js", gulp.series('build'));
