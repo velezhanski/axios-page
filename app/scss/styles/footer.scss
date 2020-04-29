@@ -66,6 +66,7 @@ footer {
             color: white;
             font-size: 14px;
             font-weight: normal;
+            font-family: $nunito-font;
             text-transform: uppercase;
             padding: 10px 0px;
             width: 200px;
@@ -91,6 +92,7 @@ footer {
             color: $blue;
             font-size: 14px;
             font-weight: normal;
+            font-family: $nunito-font;
             text-transform: uppercase;
             padding: 10px 0px;
             width: 200px;
@@ -120,8 +122,8 @@ footer {
 
     p {
       font-size: 14px;
-      color: $blue;
       font-family: $montserrat-font;
+      color: $blue;
     }
   }
 }

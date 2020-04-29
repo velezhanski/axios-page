@@ -70,9 +70,9 @@
     .box-title {
       color: white;
       font-size: 26px;
-      text-transform: uppercase;
       font-family: $ubuntu-font;
       font-weight: normal;
+      text-transform: uppercase;
       padding-left: 2rem;
       padding-bottom: 0.5rem;
 
@@ -86,9 +86,9 @@
 
       label {
         font-size: 18px;
-        color: $blue;
         font-family: $nunito-font;
         font-weight: bold;
+        color: $blue;
         position: absolute;
         transform: translate(2rem, 0.5rem);
 
@@ -99,8 +99,8 @@
 
       input {
         font-size: 30px;
-        color: $grey;
         font-family: $nunito-font;
+        color: $grey;
         width: 70%;
         border: none;
         border-radius: 50px 0px 0px 50px;
@@ -141,9 +141,9 @@
 
       p {
         font-size: 16px;
-        color: white;
         font-family: $nunito-font;
         font-weight: normal;
+        color: white;
         padding-top: 1rem;
         padding-bottom: 1rem;
         padding-left: 2rem;
