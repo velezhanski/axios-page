@@ -3,6 +3,8 @@
 ## About The Project
 This was built for an interview test, it's a simple website compiled with gulp. Let's hope that it will land me the job :smile:
 
+Please keep in mind for the Contact form to work, the website needs to be setup along with an SMTP server either through XAMPP or any other. 
+
 ## Getting Started
 First of all you will need to install the node_modules
 ```

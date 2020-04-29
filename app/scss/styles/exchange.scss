@@ -8,7 +8,8 @@
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     @media (max-width: $bp-mobile) {
       font-size: 26px;
@@ -22,7 +23,8 @@
     font-weight: normal;
     text-align: center;
     padding-bottom: 1rem;
-    padding: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   hr {
@@ -40,6 +42,10 @@
     padding-top: 2rem;
     align-items: center;
     width: 100%;
+
+    @media (max-width: $bp-tablet) {
+      padding: 0.5rem;
+    }
   }
 
   .exchange-box {
@@ -54,6 +60,11 @@
 
     @media (max-width: $bp-tablet) {
       width: 80%;
+    }
+
+    @media (max-width: $bp-tablet) {
+      padding: 1rem;
+      width: 100%;
     }
 
     .box-title {
@@ -100,8 +111,6 @@
 
         @media (max-width: $bp-mobile) {
           font-size: 24px;
-          padding-top: 1rem;
-          padding-left: 1rem;
         }
       }
 
@@ -128,6 +137,7 @@
     .exchange-switcher {
       display: flex;
       justify-content: space-between;
+      padding: 0.5rem 0;
 
       p {
         font-size: 16px;

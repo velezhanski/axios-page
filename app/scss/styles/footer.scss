@@ -22,7 +22,7 @@ footer {
 
     .links-container {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       width: auto;
       flex-wrap: wrap;
 
@@ -30,6 +30,12 @@ footer {
         margin: 2rem;
         display: flex;
         flex-direction: column;
+
+        @media (max-width: $bp-mobile) {
+          margin: 0.5rem 2rem;
+          align-items: center;        
+        }
+
 
         .title {
           color: $purple1;

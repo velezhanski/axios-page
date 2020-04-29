@@ -5,8 +5,12 @@
   background-image: url(./images/backgrounds/header-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 110vh;
+  min-height: 70rem;
   background-position: bottom;
+  
+  @media (max-width: $bp-mobile) {
+    min-height: 55rem;
+  }
 
   .logo-text {
     display: flex;
@@ -42,7 +46,7 @@
 
     div {
       flex-basis: 50%;
-      padding: 8rem 3rem;
+      padding: 8rem 2rem;
 
       @media (max-width: $bp-mobile) {
         padding: 4rem 0.5rem;
@@ -67,5 +71,6 @@
 
   .cta-box {
     display: flex;
+    padding-bottom: 5rem;
   }
 }
