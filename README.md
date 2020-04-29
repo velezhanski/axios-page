@@ -3,8 +3,6 @@
 ## About The Project
 This was built for an interview test, it's a simple website compiled with gulp. Let's hope that it will land me the job :smile:
 
-Please keep in mind for the Contact form to work, the website needs to be setup along with an SMTP server either through XAMPP or any other. 
-
 ## Getting Started
 First of all you will need to install the node_modules
 ```
@@ -15,6 +13,17 @@ And then run the following gulp command to launch the web server in the browser
 gulp start
 ```
 Now just open http://localhost:8010/ and you are good to go
+Please keep in mind for the Contact form to work, the website needs to be setup along with an SMTP server either through XAMPP or any other. 
+
+## Debug
+If you would like to debug or see change live, just run
+```
+npm install
+```
+And then run the following gulp command to launch the web server in the browser with browserSync support
+```
+gulp debug
+```
 
 ## Built With
 * [PHP](https://www.php.net/)
