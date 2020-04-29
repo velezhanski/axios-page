@@ -20,17 +20,29 @@
       min-width: auto;
     }
 
+    @media (max-width: $bp-mobile) {
+      padding: 1rem;
+    }
+
     .title {
       color: $blue;
       font-family: $ubuntu-font;
       font-weight: normal;
       font-size: 40px;
       padding-left: 2rem;
+
+      @media (max-width: $bp-mobile) {
+        font-size: 26px;
+      }
     }
 
     .contact-form {
       display: flex;
       flex-direction: column;
+
+      @media (max-width: $bp-mobile) {
+        align-items: center;
+      }
 
       .input {
         margin-top: 0.5rem;
@@ -49,10 +61,19 @@
           width: 300px;
         }
 
+        @media (max-width: $bp-mobile) {
+          width: 250px;
+          font-size: 14px;
+        }
+
         &::placeholder {
           color: $purple1;
           font-family: $nunito-font;
           font-size: 18px;
+
+          @media (max-width: $bp-mobile) {
+            font-size: 16px;
+          }
         }
       }
 

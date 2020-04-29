@@ -8,6 +8,11 @@
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
+    padding: 1rem;
+
+    @media (max-width: $bp-mobile) {
+      font-size: 26px;
+    }
   }
 
   .subtitle {
@@ -17,6 +22,7 @@
     font-weight: normal;
     text-align: center;
     padding-bottom: 1rem;
+    padding: 1rem;
   }
 
   hr {
@@ -58,6 +64,10 @@
       font-weight: normal;
       padding-left: 2rem;
       padding-bottom: 0.5rem;
+
+      @media (max-width: $bp-mobile) {
+        padding-left: 1rem;
+      }
     }
 
     .currency-input {
@@ -70,6 +80,10 @@
         font-weight: bold;
         position: absolute;
         transform: translate(2rem, 0.5rem);
+
+        @media (max-width: $bp-mobile) {
+          font-size: 16px;
+        }
       }
 
       input {
@@ -83,6 +97,12 @@
         height: 5rem;
         padding-top: 1.5rem;
         outline: none;
+
+        @media (max-width: $bp-mobile) {
+          font-size: 24px;
+          padding-top: 1rem;
+          padding-left: 1rem;
+        }
       }
 
       h1 {
@@ -98,6 +118,10 @@
         border: none;
         border-radius: 0px 50px 50px 0px;
         text-transform: uppercase;
+
+        @media (max-width: $bp-mobile) {
+          font-size: 24px;
+        }
       }
     }
 
@@ -114,6 +138,11 @@
         padding-bottom: 1rem;
         padding-left: 2rem;
         margin: 0;
+
+        @media (max-width: $bp-mobile) {
+          font-size: 12px;
+          padding-left: 1rem;
+        }
       }
 
       a {
@@ -127,6 +156,10 @@
 
           &:hover {
             box-shadow: 0px 0px 15px 1px #000000;
+          }
+
+          @media (max-width: $bp-mobile) {
+            margin-right: 1rem;
           }
         }
       }
@@ -144,6 +177,11 @@
         padding-left: 2rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
+
+        @media (max-width: $bp-mobile) {
+          font-size: 12px;
+          padding-left: 1rem;
+        }
       }
     }
   }

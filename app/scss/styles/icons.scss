@@ -11,6 +11,11 @@
     font-weight: normal;
     text-transform: uppercase;
     text-align: center;
+    padding: 1rem;
+
+    @media (max-width: $bp-mobile) {
+      font-size: 26px;
+    }
   }
 
   hr {
@@ -23,15 +28,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 60%;
-
-    @media (max-width: $bp-large) {
-      width: 80%;
-    }
-
-    @media (max-width: $bp-tablet) {
-      width: 100%;
-    }
+    max-width: 1000px;
 
     .icons-box {
       display: flex;
@@ -42,13 +39,18 @@
       padding: 2rem;
       width: 300px;
 
-      @media (max-width: $bp-tablet) {
-        width: 50%;
+      @media (max-width: $bp-mobile) {
+        padding: 0.5rem;
+        width: 150px;
       }
 
       .icon {
         height: 90px;
         width: auto;
+
+        @media (max-width: $bp-mobile) {
+          height: 50px;        
+        }
       }
 
       .icon-text {
@@ -56,7 +58,12 @@
         font-family: $nunito-font;
         color: $blue;
         padding: 1rem;
+        margin: 0;
 
+        @media (max-width: $bp-mobile) {
+          font-size: 12px;
+          padding: 0.5rem;
+        }
       }
     }
   }
