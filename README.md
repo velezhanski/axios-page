@@ -12,7 +12,8 @@ And then run the following gulp command to launch the web server in the browser
 ```
 gulp start
 ```
-Now just open http://localhost:8010/ and you are good to go
+Now just open http://localhost:8010/ and you are good to go.
+
 Please keep in mind for the Contact form to work, the website needs to be setup along with an SMTP server either through XAMPP or any other. 
 
 ## Debug
