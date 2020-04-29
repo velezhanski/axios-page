@@ -23,7 +23,15 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 70%;
+    width: 60%;
+
+    @media (max-width: $bp-large) {
+      width: 80%;
+    };
+
+    @media (max-width: $bp-tablet) {
+      width: 100%;
+    };
 
     .icons-box {
       display: flex;
@@ -32,7 +40,11 @@
       align-items: center;
       text-align: center;
       padding: 2rem;
-      width: 30%;
+      width: 300px;
+
+      @media (max-width: $bp-tablet) {
+        width: 50%;
+      };
 
       .icon {
         height: 90px;

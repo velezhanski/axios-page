@@ -1,11 +1,22 @@
 footer {
   .footer {
     display: flex;
-    width: 70%;
     margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media (max-width: $bp-large) {
+      width: 100%;
+    };
+
+    @media (max-width: $bp-tablet) {
+      flex-direction: column;
+    };
 
     .logo {
-      height: 60px;
+      width: 200px;
+      height: auto;
       margin: 2rem;
     }
 
@@ -13,6 +24,7 @@ footer {
       display: flex;
       justify-content: space-evenly;
       width: auto;
+      flex-wrap: wrap;
 
       .links-box {
         margin: 2rem;
