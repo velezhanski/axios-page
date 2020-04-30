@@ -17,7 +17,7 @@ Now just open http://localhost:8010/ and you are good to go.
 Please keep in mind for the Contact form to work, the website needs to be setup along with an SMTP server either through XAMPP or any other. 
 
 ## Debug
-If you would like to debug or see change live, just run
+If you would like to debug or see the changes live, just run
 ```
 npm install
 ```
